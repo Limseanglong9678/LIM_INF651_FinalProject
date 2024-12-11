@@ -16,4 +16,6 @@ The **Movie Watchlist Application** is a dynamic and interactive web application
 
 ## Installation and Setup
 1. Clone the repository: https://github.com/Limseanglong9678/LIM_INF651_FinalProject
+2. start the application with 'index.html'
+
 
