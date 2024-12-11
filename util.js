@@ -81,14 +81,16 @@ export function renderWatchlist(watchlist, container) {
                 <button class="remove-button" data-index="${index}">-</button>
             `;
             moviesContainer.appendChild(movieDiv);
+        });
 
-            const removeButtons = moviesContainer.querySelectorAll('.remove-button');
-            removeButtons.forEach((button, i) => {
-                button.addEventListener('click', () => {
-                    watchlist.splice(i, 1);
-                    localStorage.setItem('watchlistStore', JSON.stringify(watchlist));
-                    renderFilteredWatchlist('');
-                });
+        // Attach event listeners for remove buttons
+        const removeButtons = moviesContainer.querySelectorAll('.remove-button');
+        removeButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const index = parseInt(button.getAttribute('data-index'), 10);
+                watchlist.splice(index, 1);
+                localStorage.setItem('watchlistStore', JSON.stringify(watchlist));
+                renderFilteredWatchlist('');
             });
         });
     }
