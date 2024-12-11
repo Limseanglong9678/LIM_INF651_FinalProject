@@ -1,0 +1,254 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #E50914;
+    color: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+form input {
+    padding: 10px;
+    width: 300px;
+}
+
+button, .watchlist-button {
+    padding: 10px 20px;
+    background: #1c1c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    flex-shrink: 0;
+    align-self: flex-start; 
+}
+
+button:hover, .watchlist-button:hover {
+    background-color: #B00710;
+}
+
+
+form button {
+    padding: 10px;
+    background-color: #1c1c1c;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #B00710;
+}
+
+#main, #wmain {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+}
+
+/* Movie Container Styling */
+.movie-container {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out elements */
+    background: #1c1c1c;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.movie-poster {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.movie-container h3, .movie-container p {
+    flex-grow: 1; /* Allow text to take available space */
+    margin: 0;
+    color: #ccc;
+    word-wrap: break-word; /* Ensure text wraps properly */
+    word-break: break-word; /* Prevent overflow */
+    overflow-wrap: anywhere; /* Support text breaking anywhere */
+}
+
+.remove-button {
+    padding: 10px 20px;
+    background: #1c1c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-left: 15px;
+    align-self: flex-start; 
+}
+
+.remove-button:hover {
+    background: #B00710;
+}
+
+.empty {
+    text-align: center;
+    color: #777777;
+}
+
+/* Modal Styling */
+#popupModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    margin: 15% auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#modalMessage {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+#closeModal {
+    padding: 10px 20px;
+    background: #E50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#closeModal:hover {
+    background: #B00710;
+}
+
+/* Add Movie Form Styling */
+#addMovieForm {
+    background: #1E1E1E;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+#addMovieForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#addMovieForm input, #addMovieForm textarea, #addMovieForm button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#addMovieForm input, #addMovieForm textarea {
+    background: #333;
+    color: #FFFFFF;
+}
+
+#addMovieForm input:focus, #addMovieForm textarea:focus {
+    outline: none;
+    border: 2px solid #E50914;
+    background: #444;
+}
+
+#addMovieForm button {
+    background: #E50914;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#addMovieForm button:hover {
+    background: #B00710;
+}
+
+#addMovieFeedback {
+    text-align: center;
+    font-size: 1rem;
+    color: #76FF03; /* Green feedback color */
+    margin-top: 10px;
+}
+
+/* Contact Form Styling */
+#contact {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.submit-button {
+    background: #E50914;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background: #B00710;
+}

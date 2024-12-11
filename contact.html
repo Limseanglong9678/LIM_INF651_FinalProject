@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="watchlist.html">Watchlist</a>
+            <a href="customMovie.html">CustomMovie</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="movie" placeholder="Suggest a Movie" required>
+                <input type="number" id="year" placeholder="Year of Release" required>
+                <textarea id="message" placeholder="Movie Description" rows="5" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+            <p id="contactFeedback"></p>
+        </section>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
